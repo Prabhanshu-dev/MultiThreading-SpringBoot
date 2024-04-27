@@ -21,4 +21,16 @@ public class User {
     private String name;
     private String email;
     private String gender;
+	public void setName(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void setEmail(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void setGender(String string) {
+		// TODO Auto-generated method stub
+		
+	}
 }
