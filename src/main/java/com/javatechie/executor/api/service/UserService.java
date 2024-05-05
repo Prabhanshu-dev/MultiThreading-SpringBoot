@@ -62,4 +62,19 @@ public class UserService {
             throw new Exception("Failed to parse CSV file {}", e);
         }
     }
+    @Async
+	public CompletableFuture<List<User>> findAllUsers(int i) {
+		// TODO Auto-generated method stub
+    	 logger.info("get list of users by " + Thread.currentThread().getName());
+    	    // Simulate some work (replace with your actual logic)
+    	    try {
+				Thread.sleep(i);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+    	    List<User> users = repository.findAll();
+    	    return CompletableFuture.completedFuture(users);
+		
+	}
 }

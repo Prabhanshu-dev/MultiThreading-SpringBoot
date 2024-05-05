@@ -21,16 +21,36 @@ public class User {
     private String name;
     private String email;
     private String gender;
-	public void setName(String string) {
-		// TODO Auto-generated method stub
-		
+	public int getId() {
+		return id;
 	}
-	public void setEmail(String string) {
-		// TODO Auto-generated method stub
-		
+	public void setId(int id) {
+		this.id = id;
 	}
-	public void setGender(String string) {
-		// TODO Auto-generated method stub
-		
+	public String getName() {
+		return name;
 	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getGender() {
+		return gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", name=" + name + ", email=" + email + ", gender=" + gender + ", getId()=" + getId()
+				+ ", getName()=" + getName() + ", getEmail()=" + getEmail() + ", getGender()=" + getGender()
+				+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()
+				+ "]";
+	}
+	
 }
